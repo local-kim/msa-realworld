@@ -1,2 +1,10 @@
 server:
   port: 8080
+spring:
+  kafka:
+    bootstrap-servers: localhost:10000, localhost:10001, localhost:10002
+  datasource:
+    url: jdbc:mysql://localhost:3310/article_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
