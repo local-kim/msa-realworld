@@ -11,11 +11,9 @@ public class ArticleController {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    @GetMapping("/test")
+    @GetMapping("/articles")
     public String test() {
 
-        kafkaTemplate.send("TEST", "test");
-
-        return "OK";
+        return "/articles";
     }
 }
